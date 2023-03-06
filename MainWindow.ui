@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>782</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #2f2f2f;
+    color: #f0f0f0;
+}
+
+QMenuBar {
+    background-color: #3d3d3d;
+    color: #f0f0f0;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+}
+
+QMenuBar::item:selected {
+    background-color: #444444;
+}
+
+QMenu {
+    background-color: #3d3d3d;
+    color: #f0f0f0;
+    border: 1px solid #444444;
+}
+
+QMenu::item {
+    padding: 4px 24px;
+}
+
+QMenu::item:selected {
+    background-color: #444444;
+}
+
+QToolBar {
+    background-color: #3d3d3d;
+    border: 1px solid #444444;
+    spacing: 3px;
+}
+
+QToolBar::separator {
+    background-color: #444444;
+}
+
+QPushButton {
+    color: #f0f0f0;
+    background-color: #444444;
+    border: none;
+    padding: 4px 16px;
+}
+
+QPushButton:hover {
+    background-color: #3d3d3d;
+}
+
+QLineEdit {
+    color: #f0f0f0;
+    background-color: #444444;
+    padding: 2px;
+    border: none;
+}
+
+QLabel {
+    color: #f0f0f0;
+    background-color: #2f2f2f;
+}
+
+QTableWidget {
+    background-color: #3d3d3d;
+    color: #f0f0f0;
+    alternate-background-color: #444444;
+    gridline-color: #444444;
+}
+
+QHeaderView {
+    background-color: #3d3d3d;
+    color: #f0f0f0;
+    border: none;
+}
+
+QHeaderView::section {
+    background-color: #2f2f2f;
+    color: #f0f0f0;
+    padding: 4px 8px;
+    border: none;
+}
+
+QHeaderView::section:checked {
+    background-color: #444444;
+}
+
+QHeaderView::section:hover {
+    background-color: #444444;
+}
+
+QComboBox {
+    color: #f0f0f0;
+    background-color: #444444;
+    border: none;
+    padding: 2px;
+}
+
+QComboBox:hover {
+    background-color: #3d3d3d;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border-left-width: 1px;
+    border-left-color: #444444;
+    border-left-style: solid;
+}
+
+QComboBox::down-arrow {
+    image: url(down_arrow.png);
+    width: 16px;
+    height: 16px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QSplitter" name="splitter">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="QSplitter" name="splitter_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QComboBox" name="comboBox">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>苗栗縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>連江縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>彰化縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>雲林縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>金門縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>澎湖縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>嘉義縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>南投縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>臺東縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>屏東縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>花蓮縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>宜蘭縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>新竹縣</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>基隆市</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>新竹市</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>新北市</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>桃園市</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>臺北市</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>臺中市</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>臺南市</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>高雄市</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>嘉義市</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_2">
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="lineWidth">
+                <number>2</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>240</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="frame">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line">
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="lineWidth">
+                <number>2</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="search_Button">
+               <property name="minimumSize">
+                <size>
+                 <width>75</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微軟正黑體</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>搜尋</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>168</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="drawing_Button">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微軟正黑體</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>繪圖</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableWidget"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
